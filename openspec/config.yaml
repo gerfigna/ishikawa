@@ -1,0 +1,18 @@
+schema: spec-driven
+
+context: |
+  Repo: ishikawa.joinp.com - GitHub Pages SPA
+
+  Structure:
+  - / (root): existing index.html. containing a Vanilla HTML/CSS/JS site, no build step.
+      Simple static site simple login against backend using JWT autentication. Once you log in, you can upload files and send messages to an IA. The IA processes the files and messages and responds with insights.
+      The backend is a separate project (not in this repo) that provides the JWT authentication and the endpoints to chat with IA.
+  
+  Deployment: GitHub Pages, main branch. Static files served directly.
+  There is no framework or bundler - everything is vanilla HTML, CSS, and JS.
+
+rules:
+  tasks:
+    - Implement in the simplest way possible, without adding unnecessary complexity.
+    - Focus on functionality first, then optimize if needed.
+    - Avoid external libraries or frameworks unless absolutely necessary.
